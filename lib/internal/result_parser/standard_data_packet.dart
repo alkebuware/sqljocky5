@@ -61,6 +61,7 @@ List<dynamic> parseStandardDataResponse(
         var s = utf8.decode(list);
         values[i] = int.parse(s);
         break;
+      case FIELD_TYPE_JSON: // JSON
       case FIELD_TYPE_STRING: // char/binary/enum/set
       case FIELD_TYPE_VAR_STRING: // varchar/varbinary
         var s = utf8.decode(list);
